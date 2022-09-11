@@ -177,7 +177,7 @@ values (005,null,7,1,null,default,null),
     IdFormadepagamento int,
     Chave varchar (255),
     primary key (IdPix,IdFormadepagamento),
-    constraint fk_Pix_IdPix foreign key (Formadepagamento) references Formadepagamento (IdPix)
+    constraint fk_Pix_IdPix foreign key (IdPix) references Formadepagamento (IdPix)
     );
     
     insert into Pix (IdPessoaJ,IdPessoaF,IdPix,IdFormadepagamento,Chave) values
