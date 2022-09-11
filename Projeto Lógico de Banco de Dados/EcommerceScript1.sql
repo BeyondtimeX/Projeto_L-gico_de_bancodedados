@@ -163,13 +163,13 @@ insert into Entrega (IdEntrega,EntregaStatus,Codigorastreio) values
 
 Insert into Formadepagamento (IdPessoaJ,IdPessoaF,IdFormadepagamento,idPix,IdCartaodeCredito,tipodepagamento,limite)
 values (005,null,7,1,null,default,null),
- (006,null,7,null,2,default,null),
- (007,null,7,null,2,default,null),
+ (006,null,6,null,2,default,null),
+ (007,null,6,null,2,default,null),
  (008,null,7,1,null,default,null),
  (null,0001,7,1,null,default,null),
  (null,0002,7,1,null,default,null),
- (null,0003,7,null,2,default,null),
- (null,0004,7,null,2,default,null)
+ (null,0003,6,null,2,default,null),
+ (null,0004,6,null,2,default,null)
 ;
 
     create table Pix (
