@@ -204,7 +204,7 @@ values (005,null,7,1,null,default,null),
      constraint unique_Datadevalidade_CartaodeCredito unique (Datadevalidade),
      constraint unique_Codigodevalidacao_CartaodeCredito unique (Codigodevalidacao),
     constraint unique_CPF_CartaodeCredito unique (CPF),
-  constraint fk_CartaodeCredito_IdCartaodeCredito foreign key (Formadepagamento) references Formadepagamento (IdCartaodeCredito)
+  constraint fk_CartaodeCredito_IdCartaodeCredito foreign key (IdCartaodeCredito) references Formadepagamento (IdCartaodeCredito)
     );
     
     insert into CartaodeCredito (IdPessoaJ,IdPessoaF,IdCartaodeCredito,IdFormadepagamento,Nomedotitular,CPF,Numerodocartao,Datadevalidade,Codigodevalidacao) values 
