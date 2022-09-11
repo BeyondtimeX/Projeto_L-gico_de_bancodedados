@@ -182,13 +182,13 @@ values (005,null,7,1,null,default,null),
     
     insert into Pix (IdPessoaJ,IdPessoaF,IdPix,IdFormadepagamento,Chave) values
     (005,null,1,7,0000000001),
-    (006,null,1,7,null),
-    (007,null,1,7,null),
+    (006,null,1,6,null),
+    (007,null,1,6,null),
     (008,null,1,7,0000000002),
     (null,0001,1,7,0000000003),
     (null,0002,1,7,0000000004),
-    (null,0003,1,7,null),
-    (null,0004,1,7,null)
+    (null,0003,1,6,null),
+    (null,0004,1,6,null)
     ;
     
      create table CartaodeCredito (
@@ -209,13 +209,13 @@ values (005,null,7,1,null,default,null),
     
     insert into CartaodeCredito (IdPessoaJ,IdPessoaF,IdCartaodeCredito,IdFormadepagamento,Nomedotitular,CPF,Numerodocartao,Datadevalidade,Codigodevalidacao) values 
 (005,null,null,7,null,null,null,null),
-(006,null,'Carlos Magalhaes (EMPRESA.2)',11111111111,5462-9573-0445-3716,20-11-2027,457),
-(007,null,7,'José Gonçalves (EMPRESA.3)',222222222222,5462-9573-0445-5478,11-10-2029,254),
+(006,null,2,6,'Carlos Magalhaes (EMPRESA.2)',11111111111,5462-9573-0445-3716,20-11-2027,457),
+(007,null,2,6,'José Gonçalves (EMPRESA.3)',222222222222,5462-9573-0445-5478,11-10-2029,254),
 (008,null,null,7,null,null,null,null),
 (null,0001,null,7,null,null,null,null),
 (null,0002,null,7,null,null,null,null),
-(null,0003,'Mastercard',7,'Jose',333333333,5462-9573-0445-5778,20-11-2027,687),
-(null,0004,'Mastercard',7,'Joanal',444444444,5462-9573-0445-4578,09-09-2029,124)
+(null,0003,2,6,'Mastercard',7,'Jose',333333333,5462-9573-0445-5778,20-11-2027,687),
+(null,0004,2,6,'Mastercard',7,'Joanal',444444444,5462-9573-0445-4578,09-09-2029,124)
 ;
 
 create table relacaoprodutopedido (
