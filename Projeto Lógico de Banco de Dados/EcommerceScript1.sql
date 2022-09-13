@@ -365,7 +365,7 @@ insert into Produtosporvendedor (IdVendedorterceiro,IdProduto,Quantidade) values
 SELECT COUNT (IdPessoaF), Nome
 FROM Cliente_PF
 GROUP BY Nome
-HAVING COUNT (IdPessoaF) > 2;
+HAVING COUNT (IdPessoaF) > 02;
 
 SELECT * FROM Cliente_PF
 WHERE Nome='Jose';
