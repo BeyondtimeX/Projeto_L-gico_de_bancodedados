@@ -9,7 +9,7 @@ create table Cliente_PJ(
  Telefone varchar (45) ,
  Email varchar (255),
  constraint unique_CNPJ_Cliente_PJ unique (CNPJ),
- constraint unique_RazaoSocial unique (Razao_Social)
+ constraint unique_RazaoSocial unique (RazaoSocial)
 );
 
 INSERT INTO Cliente_PJ (IdPessoaJ,Razao_Social,CNPJ,Endereco,Telefone,Email)
