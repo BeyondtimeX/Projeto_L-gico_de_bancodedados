@@ -5,7 +5,7 @@ use ecommerce;
 
 create table Cliente_PJ(
  IdPessoaJ int primary key,
- RazaoSocial varchar (255) not null,
+ RazaoSocial varchar (255) not null AUTO_INCREMENT, 
  CNPJ char(15) not null,
  Endereco varchar(255),
  Telefone varchar (45) ,
