@@ -1,4 +1,4 @@
-MySQL Workbench
+
 
 create database ecommerce; 
 use ecommerce; 
