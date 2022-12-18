@@ -1,3 +1,5 @@
+MySQL Workbench
+
 create database ecommerce; 
 use ecommerce; 
 
@@ -367,7 +369,6 @@ insert into Produtosporvendedor (IdVendedorterceiro,IdProduto,Quantidade) values
 SELECT DISTINCT  IdPessoaJ, RazaoSocial
 FROM Cliente_PJ
 WHERE RazaoSocial IN ('3')
-
 
 SELECT COUNT (IdPessoaF), Nome
 FROM Cliente_PF
