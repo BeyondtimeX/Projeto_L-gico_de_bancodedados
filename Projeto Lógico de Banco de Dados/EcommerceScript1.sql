@@ -4,12 +4,13 @@ create database ecommerce;
 use ecommerce; 
 
 create table Cliente_PJ(
- IdPessoaJ int primary key,
- RazaoSocial varchar (255) not null AUTO_INCREMENT, 
+ IdPessoaJ int AUTO_INCREMENT,
+ RazaoSocial varchar (255) not null, 
  CNPJ char(15) not null,
  Endereco varchar(255),
  Telefone varchar (45) ,
  Email varchar (255),
+ primary key (IdPessoaJ)
  constraint unique_CNPJ_Cliente_PJ unique (CNPJ),
  constraint unique_RazaoSocial unique (RazaoSocial)
 );
