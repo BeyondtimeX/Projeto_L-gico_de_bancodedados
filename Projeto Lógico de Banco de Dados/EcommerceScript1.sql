@@ -28,7 +28,7 @@ create table Cliente_PF(
  IdPessoaF int primary key,
  Nome varchar (255) not null,
  CPF char(12) not null,
- Endereço varchar(255),
+ Endereco varchar(255),
  Telefone varchar (45),
  Email varchar (255),
  constraint unique_CPF_Cliente_PF unique (CPF)
@@ -326,7 +326,7 @@ insert into Fornecedor (Idfornecedor,RazaoSocial,CNPJ,Contato) values
 ('Fornecedora X','Aleatório LTDA',124578945102145,21999999999);
 
 Create table Terceirovendedor (
-Idterceirovendedor int auto_increment primary key,
+Idterceirovendedor int primary key,
 Razaosocial varchar (255),
 CNPJ char (15) not null,
 CPF char (11) not null, 
@@ -362,6 +362,13 @@ insert into Produtosporvendedor (IdVendedorterceiro,IdProduto,Quantidade) values
  -----------------------------------------------------------------------------------------
  SELECT * FROM Cliente_PF;
  
+ SELECT DISTINCT * FROM Cliente_PF
+ 
+SELECT DISTINCT  IdPessoaJ, RazaoSocial
+FROM Cliente_PJ
+WHERE RazaoSocial IN ('3')
+
+
 SELECT COUNT (IdPessoaF), Nome
 FROM Cliente_PF
 GROUP BY Nome
