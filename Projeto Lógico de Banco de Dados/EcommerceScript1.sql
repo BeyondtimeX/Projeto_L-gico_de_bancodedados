@@ -2,7 +2,7 @@ create database ecommerce;
 use ecommerce; 
 
 create table Cliente_PJ(
- IdPessoaJ int auto_increment primary key,
+ IdPessoaJ int primary key,
  RazaoSocial varchar (255) not null,
  CNPJ char(15) not null,
  Endereco varchar(255),
@@ -25,7 +25,7 @@ INSERT INTO Cliente_PJ (IdPessoaJ,Razao_Social,CNPJ,Endereco,Telefone,Email)
 VALUES (04,'EMPRESA.4 LTDA',444444444444,'Rio de Janeiro, Bairro -  São Gomes, 245',999999999,'exemplo.mysql@gmail.com');
 
 create table Cliente_PF(
- IdPessoaF int auto_increment primary key,
+ IdPessoaF int primary key,
  Nome varchar (255) not null,
  CPF char(12) not null,
  Endereço varchar(255),
