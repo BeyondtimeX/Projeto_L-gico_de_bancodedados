@@ -370,6 +370,10 @@ SELECT DISTINCT  IdPessoaJ, RazaoSocial
 FROM Cliente_PJ
 WHERE RazaoSocial IN ('3')
 
+SELECT DISTINCT  IdPessoaJ, RazaoSocial
+FROM Cliente_PJ
+WHERE RazaoSocial LIKE '%LTDA%'
+
 SELECT COUNT (IdPessoaF), Nome
 FROM Cliente_PF
 GROUP BY Nome
